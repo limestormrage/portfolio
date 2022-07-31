@@ -1,3 +1,4 @@
+@use 'src/styles/mixins.scss';
 @import-normalize;
 
 * {
@@ -9,6 +10,15 @@
 *::before,
 *::after {
   box-sizing: border-box; }
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
   @font-face {
       font-family: "Gilroy";
@@ -41,4 +51,18 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 943px;
+    margin: 0 auto;
+
+    @include mixins.vp-1023 {
+      padding: 0 35px;
+    }
+
+    @include mixins.vp-767 {
+      padding: 0 29px;
+    }
   }

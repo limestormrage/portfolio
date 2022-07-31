@@ -1,0 +1,23 @@
+@use 'src/styles/mixins.scss';
+
+.navList {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 29px 0 37px;
+    border-bottom: 1px solid #828282;
+
+    @include mixins.vp-767 {
+        flex-direction: column;
+    }
+}
+
+
+.navLink {
+    @include mixins.vp-767 {
+        font-size: 34px;
+        line-height: 42px;
+        font-weight: 700;
+        color: #090909;
+    }
+}
