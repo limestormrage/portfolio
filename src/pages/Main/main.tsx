@@ -1,10 +1,17 @@
 import React from 'react';
+import {
+  AboutMe, Information, Portfolio, Skills,
+} from '../../components';
 import Layout from '../../layout/Layout';
 
 function Main(): JSX.Element {
   return (
     <Layout>
-      dasdas
+      <h1 className="visually-hidden">Портфолио разработчика</h1>
+      <Information />
+      <AboutMe />
+      <Skills />
+      <Portfolio />
     </Layout>
   );
 }

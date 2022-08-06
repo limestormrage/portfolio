@@ -17,6 +17,6 @@ export const HeaderLink = {
   },
   Contacts: {
     title: 'Contacts',
-    link: '/#',
+    link: '#footer',
   },
 };

@@ -2,6 +2,7 @@ import React from 'react';
 import { LayoutProps } from './Layout.props';
 import styles from './Layout.module.scss';
 import Header from './header/Header';
+import Footer from './footer/footer';
 
 function Layout({ children }: LayoutProps): JSX.Element {
   return (
@@ -10,9 +11,7 @@ function Layout({ children }: LayoutProps): JSX.Element {
       <main>
         {children}
       </main>
-      <footer>
-        fsdfsdf
-      </footer>
+      <Footer />
     </div>
   );
 }

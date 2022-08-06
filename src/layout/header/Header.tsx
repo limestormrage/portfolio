@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { HeaderLink } from './const';
 import styles from './Header.module.scss';
 
@@ -13,12 +12,12 @@ function Header(): JSX.Element {
               <li
                 key={title}
               >
-                <Link
-                  to={link}
+                <a
+                  href={link}
                   className={styles.navLink}
                 >
                   {title}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>

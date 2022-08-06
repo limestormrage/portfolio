@@ -1,0 +1,30 @@
+.about {
+    margin: 105px 0 0;
+    background-color: #F6F6F6;
+    padding-bottom: 111px;
+}
+
+.title {
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    padding: 113px 0 0;
+}
+
+.descriptionList {
+    text-align: center;
+    max-width: 485px;
+    margin: 24px auto 0;
+}
+
+.descriptionItem {
+    margin: 0 0 42px 0;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.description {
+    color: #070707;
+}
