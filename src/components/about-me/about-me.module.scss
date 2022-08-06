@@ -1,7 +1,14 @@
+@use 'src/styles/mixins.scss';
+
 .about {
     margin: 105px 0 0;
     background-color: #F6F6F6;
     padding-bottom: 111px;
+
+    @include mixins.vp-767 {
+        margin: 84px 0 0;
+        padding-bottom: 80px;
+    }
 }
 
 .title {
@@ -9,12 +16,20 @@
     line-height: 42px;
     text-align: center;
     padding: 113px 0 0;
+
+    @include mixins.vp-767 {
+        padding: 74px 0 0;
+    }
 }
 
 .descriptionList {
     text-align: center;
     max-width: 485px;
     margin: 24px auto 0;
+
+    @include mixins.vp-767 {
+        margin: 35px auto 0;
+    }
 }
 
 .descriptionItem {

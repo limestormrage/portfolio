@@ -14,10 +14,20 @@
 
 
 .navLink {
+    color: #828282;
+
     @include mixins.vp-767 {
         font-size: 34px;
         line-height: 42px;
         font-weight: 700;
-        color: #090909;
     }
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+    
+        &:hover {
+            transition: all 0.4s;
+            color: #070707;
+            z-index: 1;
+        }
+      }
 }

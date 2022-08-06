@@ -6,10 +6,10 @@ export function Information(): JSX.Element {
     <section className={styles.information} id="information">
       <div className="container">
         <div className={styles.about}>
-          <h2 className={styles.name}>Denis Novik</h2>
+          <h2 className={styles.name}>Dmitry Tikhonov</h2>
           <p className={styles.description}>
-            UX | UI designer
-            24&nbsp;years old, Minsk
+            React developer
+            28&nbsp;years&nbsp;old, Petrozavodsk
           </p>
           <div className={styles.buttons}>
             <button className={styles.button} type="button">RU</button>
@@ -17,13 +17,16 @@ export function Information(): JSX.Element {
             <button className={styles.button} type="button">ENG</button>
           </div>
         </div>
-        <img
-          className={styles.img}
-          src="img/developer/frontender.jpg"
-          width="944px"
-          height="387px"
-          alt="Разработчик"
-        />
+        <picture>
+          <source media="(max-width: 767px)" srcSet="img/developer/frontender-mobile.jpg" />
+          <img
+            className={styles.img}
+            src="img/developer/frontender.jpg"
+            width="944px"
+            height="387px"
+            alt="Разработчик"
+          />
+        </picture>
       </div>
     </section>
   );

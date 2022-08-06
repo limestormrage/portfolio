@@ -15,7 +15,7 @@ export function AboutMe(): JSX.Element {
           </li>
           <li className={styles.descriptionItem}>
             <p>
-              I&rsquo;m studying at&nbsp;courses &laquo;Web and mobile design
+              I&rsquo;m studying at&nbsp;courses &laquo;Web&nbsp;and&nbsp;mobile design
               interfaces&raquo; in&nbsp;IT-Academy.
             </p>
           </li>

@@ -1,5 +1,11 @@
+@use 'src/styles/mixins.scss';
+
 .skills {
     padding: 0 0 172px;
+
+    @include mixins.vp-767 {
+        padding: 0 0 98px;
+    }
 }
 
 .title {
@@ -7,11 +13,19 @@
     line-height: 42px;
     text-align: center;
     padding-top: 84px;
+
+    @include mixins.vp-767 {
+        padding-top: 77px;
+    }
 }
 
 .description {
     text-align: center;
     margin: 57px 0 0;
+
+    @include mixins.vp-767 {
+        margin: 38px 0 0;
+    }
 }
 
 .list {
@@ -19,6 +33,12 @@
     grid-template-columns: repeat(4, 166px);
     gap: 20px 90px;
     margin: 88px 0 0;
+
+    @include mixins.vp-767 {
+        grid-template-columns: 1fr;
+        margin: 74px 0 0;
+        gap: 81px;
+    }
 }
 
 .item {
@@ -34,4 +54,9 @@
     text-align: center;
     color: #828282;;
     margin: 23px 27px 0;
+
+    @include mixins.vp-767 {
+        margin: 25px 0 0;
+        max-width: 100px;
+    }
 }

@@ -1,6 +1,12 @@
+@use 'src/styles/mixins.scss';
+
 .portfolio {
     background-color: #F6F6F6;
-    padding: 0 0 91px 0;
+    padding: 0 0 91px;
+
+    @include mixins.vp-767 {
+        padding: 0 0 76px;
+    }
 }
 
 .title {
@@ -8,10 +14,18 @@
     line-height: 42px;
     text-align: center;
     padding-top: 106px;
+
+    @include mixins.vp-767 {
+        padding-top: 74px;
+    }
 }
 
 .portfolioList {
     margin: 55px 0 0;
+
+    @include mixins.vp-767 {
+        margin: 73px 0 0;
+    }
 }
 
 .portfolioItem {
@@ -22,6 +36,10 @@
 
     &:last-child {
         margin: 0;
+    }
+
+    @include mixins.vp-767 {
+        margin: 0 0 72px;
     }
 }
 
@@ -46,6 +64,10 @@
         background: #070707;
         border-radius: 5px;
         height: 1px;
+    }
+
+    @include mixins.vp-767 {
+        margin: 19px 0 0;
     }
 
     @media (hover: hover), screen and (min-width: 0\0) {

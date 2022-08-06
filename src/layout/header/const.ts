@@ -1,7 +1,7 @@
 export const HeaderLink = {
   Home: {
     title: 'Home',
-    link: '/',
+    link: '#information',
   },
   About: {
     title: 'About me',
