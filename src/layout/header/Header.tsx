@@ -1,4 +1,5 @@
 import React from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { HeaderLink } from './const';
 import styles from './Header.module.scss';
 
@@ -12,12 +13,12 @@ function Header(): JSX.Element {
               <li
                 key={title}
               >
-                <a
+                <AnchorLink
                   href={link}
                   className={styles.navLink}
                 >
                   {title}
-                </a>
+                </AnchorLink>
               </li>
             ))}
           </ul>

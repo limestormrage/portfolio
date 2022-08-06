@@ -4,7 +4,7 @@ import styles from './skills.module.scss';
 
 export function Skills(): JSX.Element {
   return (
-    <section className={styles.skills}>
+    <section className={styles.skills} id="skills">
       <div className="container">
         <h2 className={styles.title}>Skills</h2>
         <p className={styles.description}>I work in such programs as</p>

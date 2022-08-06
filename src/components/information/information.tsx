@@ -3,7 +3,7 @@ import styles from './information.module.scss';
 
 export function Information(): JSX.Element {
   return (
-    <section className={styles.information}>
+    <section className={styles.information} id="information">
       <div className="container">
         <div className={styles.about}>
           <h2 className={styles.name}>Denis Novik</h2>

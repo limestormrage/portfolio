@@ -7,7 +7,7 @@ import { ReactComponent as SurfaceIcon } from './surface.svg';
 
 function Footer(): JSX.Element {
   return (
-    <footer className={styles.footer} id="#footer">
+    <footer className={styles.footer} id="footer">
       <div className="container">
         <h2 className={styles.title}>Contacts</h2>
         <p className={styles.description}>

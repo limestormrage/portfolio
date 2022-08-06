@@ -4,7 +4,7 @@ import styles from './portfolio.module.scss';
 
 export function Portfolio(): JSX.Element {
   return (
-    <section className={styles.portfolio}>
+    <section className={styles.portfolio} id="portfolio">
       <div className="container">
         <h2 className={styles.title}>Portfolio</h2>
         <ul className={styles.portfolioList}>

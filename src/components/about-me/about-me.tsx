@@ -3,7 +3,7 @@ import styles from './about-me.module.scss';
 
 export function AboutMe(): JSX.Element {
   return (
-    <section className={styles.about}>
+    <section className={styles.about} id="about-me">
       <div className="container">
         <h2 className={styles.title}>About me</h2>
         <ul className={styles.descriptionList}>

@@ -1,19 +1,19 @@
 export const HeaderLink = {
   Home: {
     title: 'Home',
-    link: '/#',
+    link: '/',
   },
   About: {
     title: 'About me',
-    link: '/#',
+    link: '#about-me',
   },
   Skills: {
     title: 'Skills',
-    link: '/#',
+    link: '#skills',
   },
   Portfolio: {
     title: 'Portfolio',
-    link: '/#',
+    link: '#portfolio',
   },
   Contacts: {
     title: 'Contacts',
