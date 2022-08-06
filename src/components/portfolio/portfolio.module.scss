@@ -35,36 +35,37 @@
     transition: all 2s;
 
     &::after {
-        content: '.';
+        content: '';
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
         margin: auto;
-        width: 0%;
-        color: transparent;
+        width: 100%;
+        color: #070707;
         background: #070707;
         border-radius: 5px;
         height: 1px;
-        opacity: 0;
     }
 
-    &:hover::after {
-        width: 100%;
-    }
-
-    &:hover {
-        color: #fff;
-        z-index: 1;
-    }
-
-    &:hover::after {
-        z-index: -10;
-        animation: fill 1s forwards;
-        -webkit-animation: fill 1s forwards;
-        -moz-animation: fill 1s forwards;
-        opacity: 1;
-    }
+    @media (hover: hover), screen and (min-width: 0\0) {
+        &:hover::after {
+            width: 100%;
+        }
+    
+        &:hover {
+            color: #fff;
+            z-index: 1;
+        }
+    
+        &:hover::after {
+            z-index: -10;
+            animation: fill 1s forwards;
+            -webkit-animation: fill 1s forwards;
+            -moz-animation: fill 1s forwards;
+            opacity: 1;
+        }
+      }
 }
 
 @keyframes fill {
