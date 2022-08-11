@@ -1,29 +1,66 @@
 @use 'src/styles/mixins.scss';
 
 .header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+}
+
+.headerActive .content {
+    border-bottom: transparent;
+    box-shadow: 0 11px 10px -9px rgb(37 37 37 / 10%);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #828282;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+
+    @include mixins.vp-767 {
+        margin: 12px 0;
+    }
 }
 
 .nav {
+    width: 60%;
+
     @include mixins.vp-767 {
-        display: none;
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        text-align: center;
+        transition: all 0.3s ease 0s;
     }
 }
 
 .navOpen {
     @include mixins.vp-767 {
-        display: block;
+        top: 0;
+        padding: 0 29px;
     }
 }
 
 .btnMenu {
     position: absolute;
-    top: 49px;
+    top: 20px;
     right: 30px;
     display: none;
     width: 33px;
     height: 20px;
     background-color: transparent;
+    z-index: 4;
 
     @include mixins.vp-767 {
         display: block;
@@ -97,12 +134,12 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 29px 0 37px;
-    border-bottom: 1px solid #828282;
+    padding: 15px 0;
 
     @include mixins.vp-767 {
         flex-direction: column;
-        border-bottom: none;
+        min-height: 100%;
+        justify-content: center;
     }
 }
 
