@@ -1,9 +1,8 @@
 import React from 'react';
 import styles from './footer.module.scss';
-import { ReactComponent as LinkedInIcon } from './linked.svg';
-import { ReactComponent as InstagramIcon } from './instagram.svg';
-import { ReactComponent as BehanceIcon } from './behance.svg';
-import { ReactComponent as SurfaceIcon } from './surface.svg';
+import { ReactComponent as GitHubIcon } from './github.svg';
+import { ReactComponent as VkIcon } from './vk.svg';
+import { ReactComponent as HabrCareerIcon } from './habr-career.svg';
 
 function Footer(): JSX.Element {
   return (
@@ -23,23 +22,30 @@ function Footer(): JSX.Element {
         </a>
         <ul className={styles.socials}>
           <li className={styles.social}>
-            <a href="/#">
-              <LinkedInIcon width="40px" height="40px" />
+            <a
+              href="https://github.com/limestormrage"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+            >
+              <GitHubIcon width="40px" height="40px" />
             </a>
           </li>
           <li className={styles.social}>
-            <a href="/#">
-              <InstagramIcon width="40px" height="40px" />
+            <a
+              href="https://vk.com/limestormrage"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+            >
+              <VkIcon width="40px" height="40px" />
             </a>
           </li>
           <li className={styles.social}>
-            <a href="/#">
-              <BehanceIcon width="40px" height="40px" />
-            </a>
-          </li>
-          <li className={styles.social}>
-            <a href="/#">
-              <SurfaceIcon width="40px" height="40px" />
+            <a
+              href="https://career.habr.com/limestormrage"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+            >
+              <HabrCareerIcon width="40px" height="40px" />
             </a>
           </li>
         </ul>
@@ -47,7 +53,7 @@ function Footer(): JSX.Element {
           Like me on
           {' '}
           <br />
-          LinkedIn, Instagram, Behance, Dribble
+          GitHub, VK
         </p>
       </div>
     </footer>

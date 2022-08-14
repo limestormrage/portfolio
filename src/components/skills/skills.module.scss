@@ -31,8 +31,13 @@
 .list {
     display: grid;
     grid-template-columns: repeat(4, 166px);
+    justify-content: center;
     gap: 20px 90px;
     margin: 88px 0 0;
+
+    @include mixins.vp-1023 {
+        gap: 20px 20px;
+    }
 
     @include mixins.vp-767 {
         grid-template-columns: 1fr;

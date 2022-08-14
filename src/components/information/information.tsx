@@ -1,4 +1,6 @@
 import React from 'react';
+import developerMob from '../../assets/developer/frontender-mobile.jpg';
+import developer from '../../assets/developer/frontender.jpg';
 import styles from './information.module.scss';
 
 export function Information(): JSX.Element {
@@ -8,7 +10,7 @@ export function Information(): JSX.Element {
         <div className={styles.about}>
           <h2 className={styles.name}>Dmitry Tikhonov</h2>
           <p className={styles.description}>
-            React developer
+            Frontend developer
             28&nbsp;years&nbsp;old, Petrozavodsk
           </p>
           <div className={styles.buttons}>
@@ -18,10 +20,10 @@ export function Information(): JSX.Element {
           </div>
         </div>
         <picture>
-          <source media="(max-width: 767px)" srcSet="img/developer/frontender-mobile.jpg" />
+          <source media="(max-width: 767px)" srcSet={developerMob} />
           <img
             className={styles.img}
-            src="img/developer/frontender.jpg"
+            src={developer}
             width="944px"
             height="387px"
             alt="Разработчик"

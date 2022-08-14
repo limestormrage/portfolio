@@ -1,5 +1,8 @@
 import React from 'react';
-import { ReactComponent as PhotoshopIcon } from './photoshop.svg';
+import { ReactComponent as JSIcon } from './js.svg';
+import { ReactComponent as ReactIcon } from './react.svg';
+import { ReactComponent as HtmlIcon } from './html.svg';
+import { ReactComponent as CssIcon } from './css.svg';
 import styles from './skills.module.scss';
 
 export function Skills(): JSX.Element {
@@ -7,30 +10,30 @@ export function Skills(): JSX.Element {
     <section className={styles.skills} id="skills">
       <div className="container">
         <h2 className={styles.title}>Skills</h2>
-        <p className={styles.description}>I work in such programs as</p>
+        <p className={styles.description}>The main technology stack</p>
         <ul className={styles.list}>
           <li className={styles.item}>
-            <PhotoshopIcon height="88px" width="89px" aria-hidden="true" />
+            <ReactIcon height="88px" width="89px" aria-hidden="true" />
             <p className={styles.itemDescription}>
-              Adobe Photoshop
+              React
             </p>
           </li>
           <li className={styles.item}>
-            <PhotoshopIcon height="88px" width="89px" aria-hidden="true" />
+            <JSIcon height="88px" width="89px" aria-hidden="true" />
             <p className={styles.itemDescription}>
-              Adobe Photoshop
+              JavaScript
             </p>
           </li>
           <li className={styles.item}>
-            <PhotoshopIcon height="88px" width="89px" aria-hidden="true" />
+            <HtmlIcon height="88px" width="89px" aria-hidden="true" />
             <p className={styles.itemDescription}>
-              Adobe Photoshop
+              HTML
             </p>
           </li>
           <li className={styles.item}>
-            <PhotoshopIcon height="88px" width="89px" aria-hidden="true" />
+            <CssIcon height="88px" width="89px" aria-hidden="true" />
             <p className={styles.itemDescription}>
-              Adobe Photoshop
+              CSS
             </p>
           </li>
         </ul>

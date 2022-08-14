@@ -9,14 +9,13 @@ export function AboutMe(): JSX.Element {
         <ul className={styles.descriptionList}>
           <li className={styles.descriptionItem}>
             <p className={styles.description}>
-              Hi, I&rsquo;m Denis&nbsp;&mdash; UX/UI designer from Minsk.
-              I&rsquo;m&nbsp;interested&nbsp;in&nbsp;design and everything connected with&nbsp;it.
+              Hi, I&rsquo;m Dmitry&nbsp;&mdash; frontend developer from Petrozavodsk.
+              I&nbsp;am interested in&nbsp;the frontend and everything related to&nbsp;it
             </p>
           </li>
           <li className={styles.descriptionItem}>
             <p>
-              I&rsquo;m studying at&nbsp;courses &laquo;Web&nbsp;and&nbsp;mobile design
-              interfaces&raquo; in&nbsp;IT-Academy.
+              I&nbsp;have completed the &laquo;React developer&raquo; courses from the HTML Academy
             </p>
           </li>
           <li className={styles.descriptionItem}>

@@ -1,5 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import GuitarShop from '../../assets/projects/guitar-shop.jpg';
+import SixCities from '../../assets/projects/six-cities.jpg';
+import BigTrip from '../../assets/projects/big-trip.jpg';
+import Keksobooking from '../../assets/projects/keksobooking.jpg';
 import styles from './portfolio.module.scss';
 
 export function Portfolio(): JSX.Element {
@@ -9,31 +12,68 @@ export function Portfolio(): JSX.Element {
         <h2 className={styles.title}>Portfolio</h2>
         <ul className={styles.portfolioList}>
           <li className={styles.portfolioItem}>
-            <img src="img/projects/project-1.jpg" alt="Проект 1" />
-            <Link
-              to="/#"
+            <img
+              src={GuitarShop}
+              width="936px"
+              height="522px"
+              alt="Онлайн магазан Guitar Shop"
+            />
+            <a
+              href="https://accelerator-react-starter-pack-limestormrage.vercel.app/catalog"
+              target="_blank"
               className={styles.link}
+              rel="nofollow noopener noreferrer"
             >
-              Online fashion store - Homepage
-            </Link>
+              Guitar-Shop
+            </a>
           </li>
           <li className={styles.portfolioItem}>
-            <img src="img/projects/project-2.jpg" alt="Проект 2" />
-            <Link
-              to="/#"
+            <img
+              src={SixCities}
+              width="936px"
+              height="522px"
+              alt="Проект Six Cities"
+            />
+            <a
+              href="https://six-cities-ixqmuy35l-limestormrage.vercel.app"
+              target="_blank"
               className={styles.link}
+              rel="nofollow noopener noreferrer"
             >
-              Reebok Store - Concept
-            </Link>
+              Six-Cities
+            </a>
           </li>
           <li className={styles.portfolioItem}>
-            <img src="img/projects/project-3.jpg" alt="Проект 3" />
-            <Link
-              to="/#"
+            <img
+              src={BigTrip}
+              width="936px"
+              height="522px"
+              alt="Проект Big-Trip"
+            />
+            <a
+              href="https://big-trip-rnpw2syoz-limestormrage.vercel.app"
+              target="_blank"
               className={styles.link}
+              rel="nofollow noopener noreferrer"
             >
-              Braun Landing Page - Concept
-            </Link>
+              Big-Trip
+            </a>
+          </li>
+          <li className={styles.portfolioItem}>
+            <img
+              src={Keksobooking}
+              width="936px"
+              height="522px"
+              alt="Проект Big-Trip"
+            />
+            <a
+              href="https://keksobooking-limestormrage.vercel.app"
+              target="_blank"
+              className={styles.link}
+              rel="nofollow noopener noreferrer"
+            >
+              Keeksobooking
+            </a>
           </li>
         </ul>
       </div>
