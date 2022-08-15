@@ -33,16 +33,18 @@
     padding: 12px 30px;
     border-radius: 25px;
 
-    &:hover {
-        box-shadow: 0px 1px 30px 0px rgba(50, 50, 50, 1);
-        transition: box-shadow 0.3s;
-    }
-
     @include mixins.vp-767 {
         width: 100%;
         justify-content: center;
         margin: 40px 0 0;
     }
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+        &:hover {
+            box-shadow: 0px 1px 30px 0px rgba(50, 50, 50, 1);
+            transition: box-shadow 0.3s;
+        }
+      }
 }
 
 .socials {
