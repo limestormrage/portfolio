@@ -3,6 +3,7 @@ import styles from './footer.module.scss';
 import { ReactComponent as GitHubIcon } from './github.svg';
 import { ReactComponent as VkIcon } from './vk.svg';
 import { ReactComponent as HabrCareerIcon } from './habr-career.svg';
+import { ReactComponent as EmailIcon } from './email.svg';
 
 function Footer(): JSX.Element {
   return (
@@ -27,7 +28,11 @@ function Footer(): JSX.Element {
               target="_blank"
               rel="nofollow noopener noreferrer"
             >
-              <GitHubIcon width="40px" height="40px" />
+              <GitHubIcon
+                className={styles.socialIcon}
+                width="40px"
+                height="40px"
+              />
             </a>
           </li>
           <li className={styles.social}>
@@ -36,7 +41,11 @@ function Footer(): JSX.Element {
               target="_blank"
               rel="nofollow noopener noreferrer"
             >
-              <VkIcon width="40px" height="40px" />
+              <VkIcon
+                className={styles.socialIcon}
+                width="40px"
+                height="40px"
+              />
             </a>
           </li>
           <li className={styles.social}>
@@ -45,7 +54,24 @@ function Footer(): JSX.Element {
               target="_blank"
               rel="nofollow noopener noreferrer"
             >
-              <HabrCareerIcon width="40px" height="40px" />
+              <HabrCareerIcon
+                className={styles.socialIcon}
+                width="40px"
+                height="40px"
+              />
+            </a>
+          </li>
+          <li className={styles.social}>
+            <a
+              href="mailto:dimarik-tixonov@yandex.ru"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+            >
+              <EmailIcon
+                className={styles.socialIcon}
+                width="40px"
+                height="40px"
+              />
             </a>
           </li>
         </ul>
@@ -53,7 +79,7 @@ function Footer(): JSX.Element {
           Like me on
           {' '}
           <br />
-          GitHub, VK
+          GitHub, VK, Habr Career
         </p>
       </div>
     </footer>
